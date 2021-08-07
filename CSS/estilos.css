@@ -1,0 +1,414 @@
+* {
+    margin: 0%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    background-color: red;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+header:hover {
+    animation-name: title;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+}
+.titleSkew {
+    transform: skewX(-10deg);
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+h4 {
+    font-size: 2rem;
+}
+.title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 3% 0%;
+}
+.subtitle {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 3% 0%;
+}
+.subtitle4 {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 3% 0%;
+}
+
+nav {
+    background-color: indianred;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    list-style-position: outside;
+    padding: 1%;
+}
+.nav-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bread {
+    background-color: red;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    color: black;
+    font-size: 1.5rem;
+    height: 15px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    width: 18%;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+ul li a:hover {
+    background-color: darkred;
+    color: white;
+}
+ul ul {
+    position: absolute;
+    display: none;
+}
+ul ul li {
+    display: block;
+    text-align: center;
+    background-color: indianred;
+    border-top: solid 1px black;
+    width: 100%;
+    padding: 1%;
+}
+ul li:hover ul {
+    display: block;
+}
+
+main {
+    background-color: tomato;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 2%;
+    display: flex;
+}
+.div {
+    background-color: darksalmon;
+    border: solid 1px black;
+    padding: 3%;
+    margin-bottom: 3%;
+}
+.div-transition {
+    transition: 0.5s;
+}
+.div-transition:hover {
+    border: solid 2px black;
+    font-weight: bold;
+}
+.news {
+    text-shadow: 3px 3px 5px black;
+    transition: 0.5s;
+}
+.content-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.imgGray {
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.imgGray:hover {
+    filter: grayscale(0%);
+}
+
+form {
+    font-weight: bold;
+}
+
+.asideAlign {
+    text-align: center;
+    margin-bottom: 3%;
+}
+.marginTop {
+    margin-top: 3%;
+}
+.marginBottom {
+    margin-bottom: 3%;
+}
+.textAlignCenter {
+    text-align: center;
+}
+
+table {
+    background-color: silver;
+    color: red;
+    font-weight: bold;
+}
+table th {
+    background-color: darkred;
+    color: white;
+}
+
+footer {
+    background-image: linear-gradient(tomato, red);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    padding: 1%;
+}
+footer:hover {
+    animation-name: title;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+.alignCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gridGames {
+    display: grid;
+    height: 100%;
+    grid-column-gap: 1%;
+    text-align: center;
+    font-size: 2rem;
+}
+.pagination {
+    display: inline-block;
+} 
+.pagination a {
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    float: center;
+    padding: 1% 2%;
+    margin-top: 2%;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.pagination a.active {
+    background-color: red;
+    color: white;
+}
+.pagination a:hover:not(.active) {
+    background-color: darkred;
+    color: white;
+}
+
+.gridCalendar {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-areas:
+    "month month month month month month month"
+    "div div div div div div div"
+    "div div div div div div div"
+    "div div div div div div div"
+    "div div div div div div div"
+    "div div div div div div div"
+    "div div div div div div div"
+    "pag pag pag pag pag pag pag";
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 120px 50px 1fr 1fr 1fr 1fr 1fr 50px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.5rem;
+    padding: 0;
+}
+.gridCalendarExtended {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-areas:
+    "month month month month month month month"
+    "div div div div div div div"
+    "div div div div div div div"
+    "div div div div div div div"
+    "div div div div div div div"
+    "div div div div div div div"
+    "div div div div div div div"
+    "div div div div div div div"
+    "pag pag pag pag pag pag pag";
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 120px 50px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.5rem;
+    padding: 0;
+}
+.month {
+    background-color: tomato;
+    border: none;
+    font-size: 3rem;
+    text-align: center;
+    grid-area: month;
+}
+.dayName {
+    background-color: brown;
+    color: white;
+    font-size: 2rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.dayGray {
+    text-align: end;
+    color: dimgray;
+    border-bottom: 1px solid dimgray;
+}
+.dayBlack {
+    text-align: end;
+    border-bottom: 1px solid black;
+}
+.gameOfTheDay {
+    text-align: start;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.gameOfTheDay:hover {
+    font-weight: bolder;
+    color: brown;
+}
+.gameGray {
+    text-align: start;
+    font-weight: bold;
+    color: dimgray;
+    transition: all 0.5s;
+}
+.gameGray:hover {
+    font-weight: bolder;
+    color: gray;
+}
+.pag {
+    grid-area: pag;
+}
+
+@keyframes title {
+    0% {color: white;}
+    25% {color: silver;}
+    50% {color: white;}
+    75% {color: silver;}
+    100% {color: white;}
+}
+
+@media only screen and (min-width: 320px) {
+    header img {
+        height: 87px;
+        width: 87px;
+    }
+    main, nav, h4 {
+        font-size: 1.25rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    #gridCalendarJuly {
+        font-size: 1rem;
+        grid-template-rows: 50px 25px 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .month {
+        font-size: 2rem;
+    }
+    .dayName {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    header img {
+        height: 100px;
+        width: 100px;
+    }
+    main, nav, h4 {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+
+    #gridCalendarJuly {
+        font-size: 1.25rem;
+        grid-template-rows: 80px 35px 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .month {
+        font-size: 2.5rem;
+    }
+    .dayName {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 738px) {
+    header img {
+        height: 112px;
+        width: 112px;
+    }
+    main, nav, h4 {
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    #gridCalendarJuly {
+        font-size: 1.5rem;
+        grid-template-rows: 100px 50px 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .month {
+        font-size: 3rem;
+    }
+    .dayName {
+        font-size: 1.75rem;
+    }
+}

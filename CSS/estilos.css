@@ -344,7 +344,7 @@ footer:hover {
     }
     .gridCalendar {
         font-size: 1rem;
-        grid-template-rows: 50px 25px 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50px 25px 1fr 1fr 1fr 1fr 1fr 50px;
     }
     .gridCalendarExtended {
         font-size: 1rem;
@@ -378,7 +378,7 @@ footer:hover {
 
     .gridCalendar {
         font-size: 1.25rem;
-        grid-template-rows: 80px 35px 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 80px 35px 1fr 1fr 1fr 1fr 1fr 50px;
     }
     .gridCalendarExtended {
         font-size: 1.25rem;
@@ -412,7 +412,7 @@ footer:hover {
     
     .gridCalendar {
         font-size: 1.5rem;
-        grid-template-rows: 100px 50px 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 50px 1fr 1fr 1fr 1fr 1fr 50px;
     }
     .gridCalendarExtended {
         font-size: 1.5rem;

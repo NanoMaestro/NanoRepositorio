@@ -353,7 +353,7 @@ footer:hover {
     .month {
         font-size: 2rem;
     }
-    .dayName {
+    .dayName, .bread {
         font-size: 0.8rem;
     }
 }
@@ -377,18 +377,18 @@ footer:hover {
     }
 
     .gridCalendar {
-        font-size: 1.25rem;
+        font-size: 1rem;
         grid-template-rows: 80px 35px 1fr 1fr 1fr 1fr 1fr 50px;
     }
     .gridCalendarExtended {
-        font-size: 1.25rem;
+        font-size: 1rem;
         grid-template-rows: 80px 35px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
     }
     .month {
         font-size: 2.5rem;
     }
-    .dayName {
-        font-size: 1.25rem;
+    .dayName, .bread {
+        font-size: 1rem;
     }
 }
 
@@ -421,7 +421,7 @@ footer:hover {
     .month {
         font-size: 3rem;
     }
-    .dayName {
+    .dayName, .bread {
         font-size: 1.5rem;
     }
 }

@@ -1,0 +1,13 @@
+footer {
+    background-image: linear-gradient(tomato, red);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    padding: 1%;
+}
+footer:hover {
+    animation-name: title;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}

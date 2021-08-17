@@ -1,0 +1,61 @@
+
+nav {
+    background-color: indianred;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    list-style-position: outside;
+    padding: 1%;
+}
+.nav-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bread {
+    background-color: red;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    color: black;
+    font-size: 1.5rem;
+    height: 15px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        display: inline-block;
+        width: 18%;
+        position: relative;
+        a {
+            text-decoration: none;
+            color: black;
+            transition: all 0.5s;
+        }
+        a:hover {
+            background-color: darkred;
+            color: white;
+        }
+    }
+    ul {
+        position: absolute;
+        display: none;
+        li {
+            display: block;
+            text-align: center;
+            background-color: indianred;
+            border-top: solid 1px black;
+            width: 100%;
+            padding: 1%;
+        }
+    }
+    li:hover ul {
+        display: block;
+    }
+}
+

@@ -1,0 +1,157 @@
+* {
+    margin: 0%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.alignCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgGray {
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.imgGray:hover {
+    filter: grayscale(0%);
+}
+
+form {
+    font-weight: bold;
+}
+
+.asideAlign {
+    text-align: center;
+    margin-bottom: 3%;
+}
+.marginTop {
+    margin-top: 3%;
+}
+.marginBottom {
+    margin-bottom: 3%;
+}
+.textAlignCenter {
+    text-align: center;
+}
+
+table {
+    background-color: silver;
+    color: red;
+    font-weight: bold;
+    th {
+        background-color: darkred;
+        color: white;
+    }
+}
+
+@keyframes title {
+    0% {color: white;}
+    25% {color: silver;}
+    50% {color: white;}
+    75% {color: silver;}
+    100% {color: white;}
+}
+
+@media only screen and (min-width: 320px) {
+    header img {
+        height: 87px;
+        width: 87px;
+    }
+    main, nav, h4, .subtitle4 {
+        font-size: 1.25rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2, .title {
+        font-size: 2rem;
+    }
+    h3, .subtitle {
+        font-size: 1.5rem;
+    }
+    .gridCalendar {
+        font-size: 0.8rem;
+        grid-template-rows: 50px 25px 1fr 1fr 1fr 1fr 1fr 50px;
+    }
+    .gridCalendarExtended {
+        font-size: 0.8rem;
+        grid-template-rows: 50px 25px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+    }
+    .month {
+        font-size: 2rem;
+    }
+    .dayName, .bread {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    header img {
+        height: 100px;
+        width: 100px;
+    }
+    main, nav, h4, .subtitle4 {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2, .title {
+        font-size: 2.5rem;
+    }
+    h3, .subtitle {
+        font-size: 2rem;
+    }
+
+    .gridCalendar {
+        font-size: 1rem;
+        grid-template-rows: 80px 35px 1fr 1fr 1fr 1fr 1fr 50px;
+    }
+    .gridCalendarExtended {
+        font-size: 1rem;
+        grid-template-rows: 80px 35px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+    }
+    .month {
+        font-size: 2.5rem;
+    }
+    .dayName, .bread {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 738px) {
+    header img {
+        height: 112px;
+        width: 112px;
+    }
+    main, nav, h4, .subtitle4 {
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    h2, .title {
+        font-size: 3rem;
+    }
+    h3, .subtitle {
+        font-size: 2.5rem;
+    }
+    
+    .gridCalendar {
+        font-size: 1.5rem;
+        grid-template-rows: 100px 50px 1fr 1fr 1fr 1fr 1fr 50px;
+    }
+    .gridCalendarExtended {
+        font-size: 1.5rem;
+        grid-template-rows: 100px 50px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+    }
+    .month {
+        font-size: 3rem;
+    }
+    .dayName, .bread {
+        font-size: 1.5rem;
+    }
+}

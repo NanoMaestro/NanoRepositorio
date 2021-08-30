@@ -99,6 +99,7 @@ main {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
   padding: 2%;
+  margin-bottom: 4%;
   display: flex; }
 
 .div {
@@ -152,7 +153,14 @@ main {
   display: grid;
   height: 100%;
   width: 100%;
-  grid-template-areas: "month month month month month month month" "div div div div div div div" "div div div div div div div" "div div div div div div div" "div div div div div div div" "div div div div div div div" "div div div div div div div" "pag pag pag pag pag pag pag";
+  grid-template-areas: "month month month month month month month"
+ "div div div div div div div"
+ "div div div div div div div"
+ "div div div div div div div"
+ "div div div div div div div"
+ "div div div div div div div"
+ "div div div div div div div"
+ "pag pag pag pag pag pag pag";
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 120px 50px 1fr 1fr 1fr 1fr 1fr 50px;
   text-align: center;
@@ -165,7 +173,15 @@ main {
   display: grid;
   height: 100%;
   width: 100%;
-  grid-template-areas: "month month month month month month month" "div div div div div div div" "div div div div div div div" "div div div div div div div" "div div div div div div div" "div div div div div div div" "div div div div div div div" "div div div div div div div" "pag pag pag pag pag pag pag";
+  grid-template-areas: "month month month month month month month"
+ "div div div div div div div"
+ "div div div div div div div"
+ "div div div div div div div"
+ "div div div div div div div"
+ "div div div div div div div"
+ "div div div div div div div"
+ "div div div div div div div"
+ "pag pag pag pag pag pag pag";
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 120px 50px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
   text-align: center;
@@ -222,9 +238,12 @@ main {
 footer {
   background-image: linear-gradient(tomato, red);
   color: white;
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   text-align: right;
-  padding: 1%; }
+  padding: 1%;
+  position: fixed;
+  bottom: 0; }
 
 footer:hover {
   animation-name: title;
@@ -236,7 +255,8 @@ footer:hover {
   margin: 0%; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: tomato; }
 
 .alignCenter {
   display: flex;

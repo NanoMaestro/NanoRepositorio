@@ -1,9 +1,12 @@
 footer {
     background-image: linear-gradient(tomato, red);
     color: white;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: right;
     padding: 1%;
+    position: fixed;
+    bottom: 0;
 }
 footer:hover {
     animation-name: title;
